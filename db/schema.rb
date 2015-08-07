@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150806125517) do
+ActiveRecord::Schema.define(version: 20150807125923) do
 
   create_table "users", force: :cascade do |t|
     t.string   "name",            limit: 255
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 20150806125517) do
     t.boolean  "admin",           limit: 1,   default: false
     t.datetime "created_at",                                  null: false
     t.datetime "updated_at",                                  null: false
+  end
+
+  create_table "writings", force: :cascade do |t|
+    t.string   "title",          limit: 255
+    t.string   "writing_type",   limit: 255
+    t.text     "content",        limit: 65535
+    t.integer  "user_id",        limit: 4
+    t.integer  "comments_count", limit: 4
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
 end

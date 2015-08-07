@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @writing.title %>
+</p>
+
+<p>
+  <strong>Writing type:</strong>
+  <%= @writing.writing_type %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @writing.content %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @writing.user_id %>
+</p>
+
+<p>
+  <strong>Comments count:</strong>
+  <%= @writing.comments_count %>
+</p>
+
+<%= link_to 'Edit', edit_writing_path(@writing) %> |
+<%= link_to 'Back', writings_path %>
