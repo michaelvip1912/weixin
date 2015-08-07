@@ -8,7 +8,6 @@
       <th>Title</th>
       <th>Writing type</th>
       <th>Content</th>
-      <th>User</th>
       <th>Comments count</th>
       <th colspan="3"></th>
     </tr>
@@ -20,7 +19,6 @@
         <td><%= writing.title %></td>
         <td><%= writing.writing_type %></td>
         <td><%= writing.content %></td>
-        <td><%= writing.user_id %></td>
         <td><%= writing.comments_count %></td>
         <td><%= link_to 'Show', writing %></td>
         <td><%= link_to 'Edit', edit_writing_path(writing), 'data-no-turbolink' => true %></td>

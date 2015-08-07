@@ -22,7 +22,7 @@ class WritingsController < ApplicationController
   # POST /writings
   # POST /writings.json
   def create
-    @writing = Writing.new(writing_params)
+    @writing = current_user.writings.build(writing_params)
     if @writing.save
         redirect_to writings_url
     else

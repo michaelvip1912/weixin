@@ -25,5 +25,5 @@
   <%= @writing.comments_count %>
 </p>
 
-<%= link_to 'Edit', edit_writing_path(@writing) %> |
+<%= link_to 'Edit', edit_writing_path(@writing), 'data-no-turbolink' => true %> |
 <%= link_to 'Back', writings_path %>
