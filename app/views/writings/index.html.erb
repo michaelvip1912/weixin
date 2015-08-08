@@ -21,7 +21,7 @@
         <td><%= writing.content %></td>
         <td><%= writing.comments_count %></td>
         <td><%= link_to 'Show', writing %></td>
-        <td><%= link_to 'Edit', edit_writing_path(writing), 'data-no-turbolink' => true %></td>
+        <td><%= link_to 'Edit', edit_writing_path(writing) %></td>
         <td><%= link_to 'Destroy', writing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Writing', new_writing_path, 'data-no-turbolink' => true %>
+<%= link_to 'New Writing', new_writing_path %>

@@ -6,11 +6,11 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'bootstrap-sass', '3.3.5.1'
-#gem 'rails_kindeditor', '0.4.5'
 
 gem 'kaminari'
 gem 'will_paginate', '3.0.7'
 gem 'acts_as_enum', '~> 1.2.1'
+gem "ckeditor", "4.1.2"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
