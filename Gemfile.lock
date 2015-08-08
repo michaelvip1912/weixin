@@ -98,7 +98,6 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.6.1)
-    mimemagic (0.3.0)
     mini_portile (0.6.2)
     minitest (5.7.0)
     multi_json (1.11.1)
@@ -109,12 +108,6 @@ GEM
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
-    paperclip (4.3.0)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      cocaine (~> 0.5.5)
-      mime-types
-      mimemagic (= 0.3.0)
     pg (0.18.2)
     rack (1.6.4)
     rack-test (0.6.3)
@@ -203,7 +196,6 @@ DEPENDENCIES
   jquery-rails
   kaminari
   mysql2
-  paperclip
   pg (= 0.18.2)
   rails (= 4.2.2)
   rails_12factor (= 0.0.3)
